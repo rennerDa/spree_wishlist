@@ -81,4 +81,5 @@
 <% if respond_to?(:email_to_friend_url) %>
   <%= link_to Spree.t('email_to_friend.send_to_friend'), email_to_friend_url('wishlist', @wishlist), :class => "button" %>
 <% end %>
+<%= link_to Spree.t(:add_all_products_to_cart), add_all_products_to_cart_wishlist_path(@wishlist), :class => "button" %>
 </div>
